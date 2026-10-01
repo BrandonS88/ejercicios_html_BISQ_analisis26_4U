@@ -1,0 +1,79 @@
+/* BISQ ---- HTML y CSS */
+/* estilos generales del cuerpo de la pagina */
+body {
+    margin: 0;                 /* elimina margenes por defecto */
+    height: 100vh;             /* altura de toda la ventana */
+    display: flex;             /* usa flexbox */
+    justify-content: center;   /* centra horizontalmente */
+    align-items: center;       /* centra verticalmente */
+    font-family: 'Segoe UI', sans-serif; /* tipo de fuente */
+    background: linear-gradient(45deg, #FC466B, #3F5EFB); /* fondo degradado */
+}
+
+/* estilo del contenedor de vidrio (glass card) */
+.glass-card {
+    width: 320px;              /* ancho del contenedor */
+    padding: 40px;             /* espacio interno */
+    border-radius: 20px;       /* bordes redondeados */
+    background: rgba(255, 255, 255, 0.25); /* fondo semitransparente */
+    backdrop-filter: blur(10px); /* desenfoca lo que esta detras */
+    -webkit-backdrop-filter: blur(10px); /* compatibilidad con safari */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* borde semitransparente */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* sombra suave */
+    text-align: center;        /* centra el contenido */
+    color: white;              /* color del texto */
+}
+
+/* estilo del titulo */
+h2 {
+    margin-top: 0;             /* sin margen superior */
+    margin-bottom: 30px;       /* espacio inferior */
+    font-weight: 600;          /* grosor del texto */
+    letter-spacing: 2px;       /* espacio entre letras */
+    text-transform: uppercase; /* convierte a mayusculas */
+}
+
+/* estilo de los campos de entrada */
+input {
+    width: 100%;               /* ancho completo */
+    padding: 15px;             /* espacio interno */
+    margin-bottom: 20px;       /* espacio inferior entre campos */
+    border: none;              /* sin borde */
+    border-radius: 30px;       /* bordes redondeados */
+    background: rgba(255, 255, 255, 0.2); /* fondo semitransparente */
+    color: white;              /* color del texto */
+    outline: none;             /* quita el borde de enfoque */
+    box-sizing: border-box;    /* incluye padding en el ancho */
+    transition: 0.3s;          /* transicion suave */
+}
+
+/* color del placeholder */
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* color del texto del placeholder */
+}
+
+/* efecto cuando el input esta enfocado */
+input:focus {
+    background: rgba(255, 255, 255, 0.4); /* fondo mas visible */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* sombra al enfocar */
+}
+
+/* estilo del boton */
+button {
+    width: 100%;               /* ancho completo */
+    padding: 15px;             /* espacio interno */
+    border: none;              /* sin borde */
+    border-radius: 30px;       /* bordes redondeados */
+    background: white;         /* fondo blanco */
+    color: #3F5EFB;            /* color del texto */
+    font-weight: bold;         /* texto en negrita */
+    font-size: 16px;           /* tamano de la fuente */
+    cursor: pointer;           /* cursor de mano */
+    transition: transform 0.2s; /* transicion suave */
+}
+
+/* efecto al pasar el mouse sobre el boton */
+button:hover {
+    transform: scale(1.05);    /* aumenta ligeramente el tamano */
+    background: #fff;          /* cambia el color de fondo */
+}

@@ -1,0 +1,57 @@
+/* BISQ ---- HTML y CSS */
+
+/* estilos generales del body */
+body {
+    display: flex;             /* usa flexbox para centrar */
+    justify-content: center;   /* centra horizontalmente */
+    align-items: center;       /* centra verticalmente */
+    height: 100vh;             /* alto de toda la ventana */
+    background: #f0f0f0;       /* color de fondo */
+    font-family: sans-serif;   /* tipo de fuente */
+}
+
+/* estilos de la tarjeta del cover */
+.cover {
+    width: 300px;              /* ancho de la tarjeta */
+    height: 300px;             /* alto de la tarjeta */
+    background: linear-gradient(
+        45deg,                 /* angulo del degradado */
+        #ff9a9e 0%,            /* color inicial */
+        #fad0c4 99%,           /* color intermedio */
+        #fad0c4 100%           /* color final */
+    );
+    border-radius: 20px;       /* esquinas redondeadas */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* sombra */
+    position: relative;        /* posicion relativa */
+    overflow: hidden;          /* oculta el desbordamiento */
+    display: flex;             /* usa flexbox */
+    flex-direction: column;    /* elementos en columna */
+    justify-content: flex-end; /* alinea el contenido abajo */
+    padding: 20px;             /* espaciado interno */
+    color: white;              /* color del texto */
+}
+
+/* estilo del circulo decorativo */
+.circle {
+    position: absolute;        /* posicion absoluta */
+    top: -50px;                /* mueve hacia arriba */
+    right: -50px;              /* mueve a la derecha */
+    width: 200px;              /* ancho del circulo */
+    height: 200px;             /* alto del circulo */
+    background: rgba(255, 255, 255, 0.2); /* color blanco con transparencia */
+    border-radius: 50%;        /* forma de circulo */
+}
+
+/* estilo del titulo */
+h2 {
+    margin: 0;                 /* sin margen */
+    font-size: 24px;           /* tamano de letra */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* sombra en el texto */
+}
+
+/* estilo del subtitulo */
+p {
+    margin: 5px 0 0;           /* margen superior */
+    font-size: 14px;           /* tamano de letra */
+    opacity: 0.9;              /* ligera transparencia */
+}

@@ -1,0 +1,40 @@
+/* BISQ ---- HTML y CSS */
+
+/* estilos generales de la pagina */
+body {
+    display: flex;             /* usa flexbox para centrar */
+    justify-content: center;   /* centrado horizontal */
+    align-items: center;       /* centrado vertical */
+    height: 100vh;             /* 100% de alto de la ventana */
+    margin: 0;                 /* sin margen */
+    background: #f0fff0;       /* color de fondo verde claro */
+}
+
+/* contenedor del piano */
+.piano {
+    position: relative;        /* permite posicionar las teclas negras */
+    display: flex;             /* coloca las teclas blancas en fila */
+}
+
+/* estilo de las teclas blancas */
+.white {
+    width: 60px;               /* ancho de cada tecla blanca */
+    height: 150px;             /* alto de cada tecla blanca */
+    border: 1px solid #ccc;    /* borde gris */
+    background: white;         /* fondo blanco */
+}
+
+/* estilo de las teclas negras */
+.black {
+    width: 40px;               /* ancho de la tecla negra */
+    height: 90px;              /* alto de la tecla negra */
+    background: black;         /* color negro */
+    position: absolute;        /* posicion absoluta para superponer */
+    z-index: 2;                /* se muestra encima de las blancas */
+}
+
+/* posicion de la tecla negra izquierda */
+.b1 { left: 40px; }            /* se ubica sobre la primera y segunda */
+
+/* posicion de la tecla negra derecha */
+.b2 { left: 100px; }           /* se ubica sobre la segunda y tercera */

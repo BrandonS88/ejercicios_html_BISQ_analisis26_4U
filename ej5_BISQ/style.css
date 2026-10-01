@@ -1,0 +1,66 @@
+/* BISQ ---- HTML y CSS */
+/* estilos generales del cuerpo de la pagina */
+body {
+    margin: 0;                   /* elimina margenes predeterminados */
+    height: 100vh;               /* alto de la ventana completa */
+    display: flex;               /* usa flexbox para centrar */
+    justify-content: center;     /* centra horizontalmente */
+    align-items: center;         /* centra verticalmente */
+    font-family: sans-serif;     /* tipo de fuente */
+    background: #ffe6ea;         /* color de fondo rosa claro */
+}
+
+/* estilo de la tarjeta */
+.card {
+    width: 300px;                /* ancho de la tarjeta */
+    padding: 40px;               /* espacio interno */
+    border-radius: 20px;         /* bordes redondeados */
+    background: white;           /* color de fondo blanco */
+    text-align: center;          /* centra el contenido */
+    box-shadow: 0 5px 15px rgba(0 0 0 0.1); /* sombra */
+}
+
+/* estilo del titulo h2 */
+h2 {
+    color: #ff4b6e;              /* color del texto */
+    margin-bottom: 20px;         /* espacio inferior */
+    display: inline-block;       /* se comporta como bloque en linea */
+    position: relative;          /* permite posicionar el pseudo-elemento */
+    padding-left: 25px;          /* espacio para el icono */
+}
+
+/* pseudo-elemento que crea el icono (rombo) */
+h2::before {
+    content: '';                 /* elemento vacio */
+    position: absolute;          /* posicion absoluta */
+    left: 0;                     /* se coloca a la izquierda */
+    top: 2px;                    /* ajuste vertical del icono */
+    width: 14px;                 /* ancho del rombo */
+    height: 14px;                /* alto del rombo */
+    background: #ff4b6e;         /* color del rombo */
+    transform: rotate(-45deg);   /* rota para formar un rombo */
+    box-shadow: -1px -1px 0 #ff4b6e; /* borde suave */
+    border-radius: 2px;          /* ligero redondeo */
+}
+
+/* estilo de los campos de texto */
+input {
+    width: 100%;                 /* ancho completo */
+    padding: 12px;               /* espacio interno */
+    margin-bottom: 15px;         /* espacio inferior entre campos */
+    border: 1px solid #ddd;      /* borde gris claro */
+    border-radius: 8px;          /* bordes redondeados */
+    box-sizing: border-box;      /* incluye padding en el ancho total */
+}
+
+/* estilo del boton */
+button {
+    width: 100%;                 /* ancho completo */
+    padding: 12px;               /* espacio interno */
+    border: none;                /* sin borde */
+    border-radius: 8px;          /* bordes redondeados */
+    background: #ff4b6e;         /* color del boton */
+    color: white;                /* color del texto */
+    font-weight: bold;           /* texto en negrita */
+    cursor: pointer;             /* cursor de mano */
+}

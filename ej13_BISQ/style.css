@@ -1,0 +1,77 @@
+/* BISQ ---- HTML y CSS */
+/* estilos generales de la pagina */
+body {
+    font-family: 'Segoe UI', sans-serif; /* tipo de fuente */
+    background-color: #e6dff5; /* color de fondo */
+    display: flex;             /* usa flexbox */
+    justify-content: center;   /* centra horizontalmente */
+    align-items: center;       /* centra verticalmente */
+    height: 100vh;             /* ocupa toda la altura */
+    margin: 0;                 /* elimina margenes */
+}
+
+/* estilo de la tarjeta (card) */
+.card {
+    width: 300px;              /* ancho de la tarjeta */
+    padding: 40px;             /* espaciado interno */
+    border-radius: 30px;       /* esquinas redondeadas */
+    background: #e6dff5;       /* color de fondo */
+    box-shadow: 9px 9px 16px rgba(179, 157, 219, 0.6),
+                -9px -9px 16px rgba(255, 255, 255, 0.8); /* sombras neumorficas */
+    text-align: center;        /* centra el contenido */
+}
+
+/* estilo del titulo */
+h2 {
+    color: #4a148c;            /* color del texto */
+    margin-bottom: 30px;       /* espacio inferior */
+    font-weight: 600;          /* grosor de la letra */
+    letter-spacing: 1px;       /* espaciado entre letras */
+}
+
+/* estilo de los campos de entrada */
+input {
+    width: 100%;               /* ancho completo */
+    padding: 15px;             /* espaciado interno */
+    margin-bottom: 20px;       /* espacio inferior */
+    border: none;              /* sin borde */
+    border-radius: 10px;       /* esquinas redondeadas */
+    background: #e6dff5;       /* color de fondo */
+    color: #4a148c;            /* color del texto */
+    box-sizing: border-box;    /* incluye padding en el tamano */
+    box-shadow: inset 6px 6px 12px #c5b3e6, /* sombra interna oscura */
+                inset -6px -6px 12px #ffffff; /* sombra interna clara */
+    outline: none;             /* sin contorno al enfocar */
+}
+
+/* color del texto de placeholder */
+input::placeholder {
+    color: #9575cd;            /* color del texto de sugerencia */
+}
+
+/* estilo del boton */
+button {
+    width: 100%;               /* ancho completo */
+    padding: 15px;             /* espaciado interno */
+    margin-top: 10px;          /* espacio superior */
+    border: none;              /* sin borde */
+    border-radius: 50px;       /* esquinas muy redondeadas */
+    background: #e6dff5;       /* color de fondo */
+    color: #4a148c;            /* color del texto */
+    font-weight: bold;         /* texto en negrita */
+    cursor: pointer;           /* cursor de mano */
+    box-shadow: 6px 6px 12px #c5b3e6,
+                -6px -6px 12px #ffffff; /* sombras neumorficas */
+    transition: all 0.2s ease; /* transicion suave */
+}
+
+/* efecto al pasar el mouse */
+button:hover {
+    color: #651fff;            /* color del texto al pasar el mouse */
+}
+
+/* efecto al hacer clic */
+button:active {
+    box-shadow: inset 4px 4px 8px #c5b3e6,
+                inset -4px -4px 8px #ffffff; /* sombra interna */
+}

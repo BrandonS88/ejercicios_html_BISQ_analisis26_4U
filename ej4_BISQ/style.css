@@ -1,0 +1,30 @@
+/* BISQ ---- HTML y CSS */
+
+/* estilos generales del cuerpo de la pagina */
+body {
+    display: flex;             /* usa flexbox para centrar */
+    justify-content: center;   /* centrado horizontal */
+    align-items: center;       /* centrado vertical */
+    height: 100vh;             /* 100% del alto de la ventana */
+    background: #ffffff;       /* color de fondo blanco */
+    margin: 0;                 /* elimina margenes por defecto */
+    font-family: 'Georgia', 'Times New Roman', serif; /* tipo de fuente */
+}
+
+/* estilo del texto r&b */
+.rnb-text {
+    font-size: 90px;           /* tamano grande del texto */
+    font-weight: bold;         /* texto en negrita */
+    text-transform: uppercase; /* convierte a mayusculas */
+    letter-spacing: -2px;      /* espacio entre letras */
+    margin: 0;                 /* sin margen */
+
+    /* degradado de color en el texto */
+    background: linear-gradient(135deg, #240046 0%, #7b2cbf 50%, #ffd700 100%); /* gradiente morado a amarillo */
+    -webkit-background-clip: text; /* aplica el fondo solo al texto */
+    background-clip: text;     /* propiedad estandar */
+    color: transparent;        /* hace transparente el color del texto */
+
+    /* sombra para dar profundidad */
+    filter: drop-shadow(2px 2px 0px rgba(0 0 0 0.11));
+}

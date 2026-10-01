@@ -1,0 +1,43 @@
+/* BISQ ---- HTML y CSS */
+/* estilos generales de la pagina */
+body {
+    display: flex;             /* usa flexbox para centrar */
+    justify-content: center;   /* centra horizontalmente */
+    align-items: center;       /* centra verticalmente */
+    height: 100vh;             /* alto de toda la ventana */
+    background: #f4f4f4;       /* color de fondo gris claro */
+    font-family: sans-serif;     /* tipo de fuente */
+    margin: 0;                 /* sin margen */
+}
+
+/* tarjeta de reporte */
+.card {
+    width: 250px;              /* ancho de la tarjeta */
+    background: white;         /* fondo blanco */
+    padding: 20px;             /* espacio interno */
+    border-radius: 10px;        /* bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* sombra */
+}
+
+/* titulo de la tarjeta */
+h3 {
+    margin: 0 0 15px;          /* margen inferior */
+    text-align: center;        /* texto centrado */
+    color: #333;               /* color del texto */
+}
+
+/* estilo de la lista */
+li {
+    display: flex;             /* usa flexbox en cada fila */
+    justify-content: space-between; /* separa los elementos */
+    padding: 8px 0;            /* espacio interno */
+    border-bottom: 1px solid #eee; /* linea divisoria */
+    list-style: none;          /* quita los puntos de la lista */
+    color: #555;               /* color del texto */
+}
+
+/* estilo de la calificacion */
+span {
+    font-weight: bold;         /* texto en negrita */
+    color: #2ecc71;            /* color verde */
+}

@@ -1,0 +1,59 @@
+/* BISQ ---- html y css */
+/* estilos generales del cuerpo de la pagina */
+body {
+    display: flex;             /* usa flexbox para centrar */
+    justify-content: center;   /* centrado horizontal */
+    align-items: center;       /* centrado vertical */
+    height: 100vh;             /* 100% de alto de la ventana */
+    background: #e0e0e0;       /* color de fondo */
+    margin: 0;                 /* elimina margenes */
+}
+
+/* contenedor principal de la postal */
+.postcard {
+    width: 500px;              /* ancho de la postal */
+    height: 300px;             /* alto de la postal */
+    background: #fdfbf7;       /* color de fondo */
+    border: 2px dashed #8b4513;/* borde punteado (dashed) */
+    padding: 20px;             /* espacio interno */
+    box-shadow: 5px 5px 15px rgba(0 0 0 0.2); /* sombra */
+    display: flex;             /* distribuye los lados */
+}
+
+/* lado izquierdo */
+.left-side {
+    width: 60%;                /* 60% del ancho */
+    padding-right: 20px;       /* espacio a la derecha */
+}
+
+/* lado derecho */
+.right-side {
+    width: 40%;                /* 40% del ancho */
+    border-left: 2px solid #ddd; /* linea vertical */
+    padding-left: 20px;        /* espacio a la izquierda */
+    display: flex;             /* usa flexbox */
+    flex-direction: column;    /* elementos en columna */
+    justify-content: space-between; /* espacio entre elementos */
+}
+
+/* cuadro de la estampilla */
+.stamp-box {
+    width: 80px;               /* ancho de la estampilla */
+    height: 90px;              /* alto de la estampilla */
+    border: 2px dotted #ccc;   /* borde punteado (dotted) */
+    align-self: flex-end;      /* alineado a la derecha */
+    background: #fff;          /* fondo blanco */
+}
+
+/* lineas de la direccion */
+.address-lines {
+    margin-top: 20px;          /* espacio superior */
+}
+
+/* estilo de cada linea */
+.line {
+    width: 100%;               /* ancho completo */
+    height: 1px;               /* grosor de la linea */
+    background: #ccc;          /* color de la linea */
+    margin-bottom: 20px;       /* espacio entre lineas */
+}

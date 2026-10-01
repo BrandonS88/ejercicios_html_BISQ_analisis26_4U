@@ -1,0 +1,79 @@
+/* BISQ - HTML y CSS */
+/* estilos generales de la pagina */
+body {
+    margin: 0;                 /* elimina margenes por defecto */
+    height: 100vh;             /* altura completa de la ventana */
+    display: flex;             /* usa flexbox para centrar */
+    justify-content: center;   /* centra horizontalmente */
+    align-items: center;       /* centra verticalmente */
+    background: #2c3e50;       /* color de fondo de la pagina */
+    font-family: 'Courier New', monospace; /* tipo de fuente */
+}
+
+/* estilo del contenedor principal del boleto */
+.ticket {
+    width: 300px;              /* ancho del boleto */
+    background: #fff;          /* fondo blanco */
+    border-radius: 10px;       /* bordes redondeados */
+    overflow: hidden;          /* oculta lo que sobresalga */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* sombra */
+}
+
+/* parte superior del boleto */
+.top {
+    background: #e74c3c;       /* color rojo */
+    color: white;              /* texto blanco */
+    padding: 20px;             /* espaciado interno */
+    text-align: center;        /* centra el texto */
+    position: relative;        /* para los pseudo-elementos */
+}
+
+/* bordes decorativos de la parte superior */
+.top::before, .top::after {
+    content: '';               /* crea un elemento vacio */
+    position: absolute;        /* posicion absoluta */
+    bottom: -10px;             /* se coloca abajo */
+    width: 20px;               /* ancho del circulo */
+    height: 20px;              /* alto del circulo */
+    background: #2c3e50;       /* mismo color del fondo */
+    border-radius: 50%;        /* forma circular */
+}
+
+.top::before { left: -10px; }  /* circulo izquierdo */
+.top::after { right: -10px; }  /* circulo derecho */
+
+/* estilo del titulo */
+h2 {
+    margin: 0;                 /* sin margen */
+    font-size: 24px;           /* tamano del texto */
+    text-transform: uppercase; /* convierte a mayusculas */
+}
+
+/* estilo del subtitulo */
+.movie-title {
+    font-size: 14px;           /* tamano del texto */
+    opacity: 0.9;              /* ligeramente transparente */
+    margin-top: 5px;           /* espacio superior */
+}
+
+/* parte inferior del boleto */
+.bottom {
+    padding: 20px;             /* espaciado interno */
+    display: flex;             /* usa flexbox */
+    justify-content: space-between; /* separa los elementos */
+    border-top: 2px dashed #ccc; /* linea punteada */
+}
+
+/* estilo de las etiquetas (DATE, TIME, SEAT) */
+.info div {
+    font-size: 12px;           /* tamano del texto */
+    color: #7f8c8d;            /* color gris */
+    margin-bottom: 5px;        /* espacio inferior */
+}
+
+/* estilo de los valores (SEP 28, 20:00, A12) */
+.info span {
+    font-size: 16px;           /* tamano del texto */
+    font-weight: bold;         /* texto en negrita */
+    color: #2c3e50;            /* color oscuro */
+}
